@@ -1,9 +1,16 @@
 doctype html
 html(lang="en")
   include ../includes/head.pug
-  +head("Home | Justin Muirhead", "Justin Muirhead's Portfolio", "../img/justinMuirheadGreyscale.jpg", true, "index", "The words 'Justin Muirhead' on a background of various circles")
+  +head("Home | Justin Muirhead", "Justin Muirhead's Portfolio", "../img/justinMuirheadBannerDesaturatedConstrastBumpedSubtler_16x9.png", true, "index", "The words 'Justin Muirhead' on a background of various circles")
   include ../includes/header.pug
-  +header
+  +header("justinMuirheadBannerLight.png")
+  .col-10.mx-auto
+    .min-vh-100
+    hr
+    .d-flex.justify-content-center
+      a.bi-linkedin.fs-1.link-dark.me-3(
+        href="https://www.linkedin.com/in/justinmuirhead"
+      )
+      a.bi-github.fs-1.link-dark(href="https://github.com/hdert")
   include ../includes/footer.pug
-  body.d-flex.flex-column.min-vh-100.pb-5
   +footer
