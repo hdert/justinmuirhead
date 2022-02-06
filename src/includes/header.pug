@@ -1,5 +1,5 @@
-mixin header
-  img#bannerImage.img-fluid.w-100(src="../img/justinMuirheadGreyscale.jpg")
+mixin header(bannerImage)
+  img#bannerImage.img-fluid.w-100(src=`../img/${bannerImage}`)
   nav.navbar.navbar-dark.bg-secondary.sticky-top.container-fluid
     a.navbar-brand(href="index.pug")
       img(
