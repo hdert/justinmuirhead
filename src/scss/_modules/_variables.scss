@@ -57,3 +57,14 @@ $font-family-sans-serif: "Raleway", system-ui, -apple-system, "Segoe UI", Roboto
 
 /* Utilities */
 @import "../../../node_modules/bootstrap/scss/utilities/api";
+
+// $bootstrap-icons-font-src: url("../../node_modules/bootstrap-icons/fonts/bootstrap-icons.woff2?e2f6e48459d8b0f394eea57aba940179")
+//     format("woff2"),
+//   url("./fonts/bootstrap-icons.woff?e2f6e48459d8b0f394eea57aba940179")
+//     format("woff") !default;
+$bootstrap-icons-font-src: url("../../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2?e2f6e48459d8b0f394eea57aba940179")
+    format("woff2"),
+  url("../../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff?e2f6e48459d8b0f394eea57aba940179")
+    format("woff") !default;
+
+@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
