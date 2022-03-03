@@ -2,11 +2,15 @@ doctype html
 html(lang="en")
   include ../includes/head.pug
   +head("Home | Justin Muirhead", "Justin Muirhead's Portfolio", "../img/justinMuirheadBannerDesaturatedConstrastBumpedSubtler_16x9.png", true, "index", "The words 'Justin Muirhead' on a background of various circles")
-  include ../includes/header.pug
-  +header("justinMuirheadBannerLight.png")
   body.d-flex.flex-column.min-vh-100
+    include ../includes/header.pug
+    +header("justinMuirheadBannerLight.png")
     //- a.badge-base__link.LI-simple-link(
     //-   href="https://nz.linkedin.com/in/justinmuirhead?trk=profile-badge"
     //- ) Justin Muirhead
+    section.container.mt-3
+      h1#about About
+      p Justin is a Year 13 student at Mountainview High School passionate about Linux, Open-Source and Technology. Justin is skilled in Python and Linux and is currently learning Rust.
+    .min-vh-100
     include ../includes/footer.pug
     +footer
