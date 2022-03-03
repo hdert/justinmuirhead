@@ -1,10 +1,13 @@
 mixin header(bannerImage)
   img#bannerImage.img-fluid.w-100(src=`../img/${bannerImage}`)
-  nav.navbar.navbar-dark.bg-secondary.sticky-top.container-fluid
-    a.navbar-brand(href="index.pug")
+  nav.navbar.navbar-expand.navbar-light.bg-secondary.sticky-top.container-fluid.p-0
+    a.navbar-brand.p-2(href="index.pug")
       img(
         src="../img/icons/logo.png",
         alt="Circular Logo",
         height="40",
         width="40"
       )
+    #navbarContent.collapse.navbar-collapse.p-0
+      .navbar-nav
+        a.nav-link(href="#about") About
