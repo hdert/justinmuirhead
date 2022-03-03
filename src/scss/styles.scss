@@ -4,3 +4,13 @@
   height: 33vh;
   object-fit: cover;
 }
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: $primary;
+  color: $secondary;
+}
+
+nav.navbar {
+  align-items: unset;
+}
